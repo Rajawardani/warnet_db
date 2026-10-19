@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #111827, #1d4ed8);
+    color: white;
+    padding: 25px 7%;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 7px 0 0;
+    color: #dbeafe;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 15px 7%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #2563eb;
+}
+
+/* CONTENT */
+.container {
+    width: 86%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.title {
+    margin-bottom: 25px;
+}
+
+.title h2 {
+    margin-bottom: 5px;
+}
+
+.title p {
+    color: #777;
+}
+
+/* DASHBOARD */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.card .jumlah {
+    font-size: 35px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.card a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+/* FORM */
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* TABLE */
+.table-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #1d4ed8;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+    background: #f8fafc;
+}
+
+/* STATUS */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.tersedia {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.digunakan {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.rusak {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.footer {
+    margin-top: 50px;
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
